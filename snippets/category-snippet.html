@@ -1,0 +1,11 @@
+<!--as we get an array of categories, loop ove rthe array to populate the snippent and insert into the html and build it up-->
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+	<!--short names are used to get all the menu items of the category and each of these short names has a JSON file-->
+  <a href="#" onclick="$dc.loadMenuItems('{{short_name}}');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/{{short_name}}/{{short_name}}.jpg" alt="{{name}}">
+      <!--insert the peoperty value of the propery name into the html-->
+      <span>{{name}}</span>
+    </div>
+  </a>
+</div>
